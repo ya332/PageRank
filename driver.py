@@ -2,7 +2,7 @@
 from mr_pagerank import PageRank
 
 if __name__ == '__main__':
-    input_file = 'preprocessed_web-Google.txt'
+    input_file = 'preprocessed_sample_input.txt'
     output_dir = 'output_graph_{}/'
 
     iteration = 0

@@ -4,7 +4,7 @@ import re,os
 if __name__ == '__main__':
 
     NUMBER_RE = re.compile(r"[-?\d']+")
-    input_file = 'web-Google.txt'
+    input_file = 'sample_input.txt'
     with open(input_file, 'r') as out_file:
         data = [x.split() for x in out_file.read().splitlines()]
 

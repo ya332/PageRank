@@ -21,7 +21,7 @@ By default I am running the small dataset, because the web-Google.txt takes at l
 
 Any additional dataset should be in the format of the sample_input.txt. 
 When this command runs,
-`$ python preprocess.py`
+`$ python preprocess.py <file_name goes here>`
 preprocessed_input.txt will be generated.(It attaches the word preprocessed to the beginning of the input filename) We then read this file in the driver.py file, and calculate the pagerank values based on our implementation.
 
 

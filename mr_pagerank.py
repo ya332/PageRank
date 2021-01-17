@@ -15,7 +15,7 @@ class PageRank(MRJob):
     def mapper(self, nid, node):
         # Unpack the values of the node
         adjacency_list, pagerank = node
-        p = pagerank/len(adjacency_list)
+        p = pagerank / len(adjacency_list)
 
         # Yield the node, labelled for the reducer
         yield nid, ('node', node)
@@ -42,7 +42,7 @@ class PageRank(MRJob):
             # We will sum the pagerank values
             elif label == 'pagerank':
                 cur_sum += content
-                #previous_pagerank = content
+                previous_pagerank = content
 
         # Bundle the adjacency list and the pagerank value
         node = (node[0], cur_sum)

@@ -17,7 +17,7 @@ mrjob==0.6.9
 
 ### To run the Python files:
 `$ python driver.py`
-By default I am running the small dataset, because the web-Google.txt takes more than 5 minutes. 
+By default I am running the small dataset, because the web-Google.txt takes at least a day to run on i-5, 1.9 GHz, 16 GB RAM. 
 
 Any additional dataset should be in the format of the sample_input.txt. 
 When this command runs,
